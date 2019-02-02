@@ -1,0 +1,53 @@
+SELECTION SORT: RANDOM ORDER
+
+10000 elements = ~17 seconds
+10000 elements = ~17 seconds
+10000 elements = ~16 seconds
+
+20000 elements = ~64 seconds
+20000 elements = ~ seconds
+20000 elements = ~ seconds
+
+40000 elements = ~ seconds
+40000 elements = ~ seconds
+40000 elements = ~ seconds
+
+80000 elements = ~1125 seconds
+80000 elements = ~1101 seconds
+80000 elements = ~1131 seconds
+
+SELECTION SORT: PRE-SORTED ASC
+
+10000 elements = ~16 seconds
+10000 elements = ~17 seconds
+
+20000 elements = ~64 seconds
+20000 elements = ~ seconds
+20000 elements = ~ seconds
+
+40000 elements = ~ seconds
+40000 elements = ~ seconds
+
+80000 elements = ~ seconds
+80000 elements = ~ seconds
+
+SELECTION SORT: PRE-SORT DESC
+
+10000 elements = ~16 seconds
+10000 elements = ~19 seconds
+
+20000 elements = ~68 seconds
+20000 elements = ~ seconds
+20000 elements = ~ seconds
+
+40000 elements = ~ seconds
+40000 elements = ~ seconds
+
+80000 elements = ~ seconds
+80000 elements = ~ seconds
+
+
+
+only decreasing problem size by one each time, not very good
+
+size of int in python in 16 bytes, 16*40000 = 640000
