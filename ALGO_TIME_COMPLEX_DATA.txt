@@ -10,7 +10,7 @@ SELECTION SORT: RANDOM ORDER
 
 40000 elements = ~248 seconds
 40000 elements = ~275 seconds
-40000 elements = ~ seconds
+40000 elements = ~249 seconds
 
 80000 elements = ~1023 seconds
 80000 elements = ~1101 seconds
@@ -28,9 +28,9 @@ SELECTION SORT: PRE-SORTED ASC
 20000 elements = ~63 seconds
 
 40000 elements = ~ 248 seconds
-40000 elements = ~ seconds
+40000 elements = ~ 253 seconds
 
-80000 elements = ~1023 seconds
+80000 elements = ~ 1023 seconds
 80000 elements = ~ 1232seconds
 80000 elements = ~ 1020seconds
 
@@ -44,7 +44,7 @@ SELECTION SORT: PRE-SORT DESC
 20000 elements = ~66 seconds
 
 40000 elements = ~ 259 seconds
-40000 elements = ~ seconds
+40000 elements = ~ 245 seconds
 
 80000 elements = ~ 1477 seconds
 80000 elements = ~ 1065 seconds
