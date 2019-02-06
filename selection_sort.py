@@ -4,7 +4,7 @@ import time
 
 ## intialize array
 arr_length = 40
-arr=np.random.randint(0,99999,arr_length)
+arr = np.random.randint(0,99999,arr_length)
 
 ##https://www.geeksforgeeks.org/python-program-for-selection-sort/  <---source for selection sort
 arr=np.random.randint(0,99999,arr_length)
