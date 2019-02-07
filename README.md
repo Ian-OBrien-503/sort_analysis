@@ -1,4 +1,7 @@
-the sort analysis was conducted using python and 
+#### I used code from the following for...
+#### Selection Sort:     https://www.geeksforgeeks.org/python-program-for-selection-sort/ 
+#### Merge Sort:         https://www.sanfoundry.com/python-program-implement-merge-sort/
+
 ## selection sort
 
 ## insertion sort
