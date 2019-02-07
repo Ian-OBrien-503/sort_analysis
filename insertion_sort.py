@@ -3,7 +3,7 @@ import numpy as np
 import time
 
 ##initalize array to sort
-arr_length = 20000
+arr_length = 40000
 arr = np.random.randint(0,9999999,arr_length)
 
 
