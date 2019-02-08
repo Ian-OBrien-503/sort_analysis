@@ -2,6 +2,18 @@
 #### Selection Sort:     https://www.geeksforgeeks.org/python-program-for-selection-sort/ 
 #### Merge Sort:         https://www.sanfoundry.com/python-program-implement-merge-sort/
 
+# *preface*  
+
+I chose to implement my project in python, something I have never done before and thought that I would run into a lot more issues than I really would.  The fact that python is loosely typed and has great libraries for arrays and timing things, it made developing the tests quite easy.  Making large random arrays with various sizes and order was much easier than doing
+it in C.  
+
+I also chose to report my results via git-hub and including all my files on the web which I had a general idea how to do,  
+and the only semi-difficult part was learning some basic markdown to format this report.  
+
+I am timing the algorithms with the time library for python and using time.clock() and some basic arithmetic to get good approximations.  I used my home laptop with Linux mint, writing the code using python 3.5 in a PyCharm editor.  The only real issue that I encountered was the fact that python stores integers as 16-byte objects.  I am limited to 8GB of ram, and when running tests for the merge sort we sorted lists of up to 16 million integers.  If I had chose to get very very large input sizes outside of the size of my ram that may have affected runtime to reach out to the disk to get some of the data. 
+
+
+
 # *selection sort analysis*
 
 expected best:      O(n^2)  
@@ -75,9 +87,9 @@ expected average:   0(n\*log(n))
 
 order    | 1,000,000 | 2,000,000 | 4,000,000 | 8,000,000  
 ---------|-----------|-----------|-----------|--------  
-random   |  17.0     |   35.4    |    79.2   | 
-pre-sort |  13.2     |  28.7     |    62.1   |   
-reverse  |  15.2     |   30.2    |   | 
+random   |  17.0     |   35.4    |    79.2   | 155
+pre-sort |  13.2     |  28.7     |    62.1   |   132.6
+reverse  |  15.2     |   30.2    |  62.6     |  134
 
 The final sort that was analyzed was the merge sort.  It seems to be the best sort for the cases that we tested for in terms of run-time.  It is important to consider why the expected runtime is n*log(n).  We have a log(n) run-time because we are splitting the problem size in half at each step of the algorithm, and at each step in the merge, we have to compare n,  
 n elements.  There will be a constant multiplier in these cases that will vary depending on the number of steps you had to take to merge all of the data back together.  As stated previously this constant is ignored and we can claim 0(n\*logn) time complexity.  
@@ -86,4 +98,17 @@ It is worth noting also that n*logn runtime is worse than long runtime and worse
 linear run time multiplied by the log of the constant, which turns out to be relatively small compared to say n^2 time.
 For very large inputs this is nearly linear but slightly worse, which holds true ion our analysis of the run-times. 
 Also regardless of the condition of the array before merge-sort begins it performs approximately the same under all conditions, which is the expected behavior of the merge sort algorithm. 
+
+
+# *conclusions...*
+
+It seems that the selection sort and insertion sort were not the most useful sorts.  They would perform fine for small tasks needed to sort the list of size 100 or less which may be useful for some small applications interpreting small sets of data. The ease of implementation of these algorithms makes these much more desirable to choose for cases like these.
+I suppose insertion sort could be useful to check a large set of data to tell you whether it was in order or not, but not very useful for actually performing the sort. 
+
+Merge sort seems much more useful for larger scale applications like sorting customer data from a database, or complex scientific applications where order matters on large sets of data.  The good news for the merge sort also is regardless
+of the condition of the data pre-sort you have a relatively fast sort time, even for large data sets.  I was very impressed
+that I could sort 16 million integers in any order in approximately 130 seconds.  The tradeoff here is that the implementation of the merge sort is significantly more difficult.  
+
+All in all, each algorithm has its trade-offs in terms of ease of implementation vs performance, but we should really avoid
+using sorts similar to selection or insertion sort for large sets of data at all costs. 
 
