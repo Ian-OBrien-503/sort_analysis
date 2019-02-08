@@ -31,9 +31,9 @@ expected best:      O(n)
 expected worst:     O(n^2)  
 expected average:   O(n^2)  
 
-*experimental time-complexity for pre-sorted order:  O(n)*
-*experimental time-complexity for random order:  O(n^2)*
-*experimental time-complexity for reverse order:  O(n^2)*
+*experimental time-complexity for pre-sorted order:  O(n)*  
+*experimental time-complexity for random order:  O(n^2)*  
+*experimental time-complexity for reverse order:  O(n^2)*  
 
 **actual average run-times for #n elements (in seconds)**  
 
