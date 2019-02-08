@@ -4,13 +4,13 @@
 
 # *preface*  
 
-I chose to implement my project in python, something I have never done before and thought that I would run into a lot more issues than I really would.  The fact that python is loosely typed and has great libraries for arrays and timing things, it made developing the tests quite easy.  Making large random arrays with various sizes and order was much easier than doing
+I choose to implement my project in python, something I have never done before and thought that I would run into a lot more issues than I really would.  The fact that python is loosely typed and has great libraries for arrays and timing things, it made developing the tests quite easy.  Making large random arrays with various sizes and order was much easier than doing
 it in C.  
 
-I also chose to report my results via git-hub and including all my files on the web which I had a general idea how to do,  
+I also choose to report my results via git-hub and including all my files on the web which I had a general idea how to do,  
 and the only semi-difficult part was learning some basic markdown to format this report.  
 
-I am timing the algorithms with the time library for python and using time.clock() and some basic arithmetic to get good approximations.  I used my home laptop with Linux mint, writing the code using python 3.5 in a PyCharm editor.  The only real issue that I encountered was the fact that python stores integers as 16-byte objects.  I am limited to 8GB of ram, and when running tests for the merge sort we sorted lists of up to 16 million integers.  If I had chose to get very very large input sizes outside of the size of my ram that may have affected runtime to reach out to the disk to get some of the data. 
+I am timing the algorithms with the time library for python and using time.clock() and some basic arithmetic to get good approximations.  I used my home laptop with Linux mint, writing the code using python 3.5 in a PyCharm editor.  The only real issue that I encountered was the fact that python stores integers as 16-byte objects.  I am limited to 8GB of ram, and when running tests for the merge sort we sorted lists of up to 16 million integers.  If I had choose to get very very large input sizes outside of the size of my ram that may have affected runtime to reach out to the disk to get some of the data. 
 
 
 
