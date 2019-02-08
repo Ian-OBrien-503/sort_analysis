@@ -8,7 +8,7 @@ expected best:      O(n^2)
 expected worst:     O(n^2)  
 expected average:   O(n^2)
 
-*experiemental time-complexity in all cases: 0(n^2)*
+*experiemental time-complexity in all cases run: 0(n^2)*
 
 **actual average run-times for #n elements (in seconds)** 
 
@@ -67,7 +67,7 @@ expected best:      0(n\*log(n))
 expected worst:     0(n\*log(n))  
 expected average:   0(n\*log(n))  
 
-*experimental time-complexity for pre-sorted order:  ~0(n\*log(n))*  
+*experimental time-complexity for all cases run:  ~0(n\*log(n))*  
 
 **actual average run-times for #n elements (in seconds)** 
 
