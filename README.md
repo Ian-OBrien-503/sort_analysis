@@ -43,7 +43,7 @@ random   |   21   | 86     |  349.6 |  1376
 pre-sort |  0.004 | 0.009  |  0.013 |  0.038
 reverse  |  42.3  | 172.3  | 700.6  |  2768
 
-**NOTE:  
+**  NOTE:  
 only performed one run for each case for input size of 80,000 since runs took so long. Time seemed consistent  with the 
 rest of the data, if had more time would perform more tests
 **
