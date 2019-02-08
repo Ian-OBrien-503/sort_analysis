@@ -2,7 +2,7 @@ import random
 import numpy as np
 import time
 
-arr_length = 1000000
+arr_length = 8000000
 
 ## SOURCE
 ## https://www.sanfoundry.com/python-program-implement-merge-sort/
@@ -41,11 +41,29 @@ def merge_list(alist, start, mid, end):
             k = k + 1
 
 ##initalize array
-alist = np.random.randint(0,9999999,arr_length)
+alist = np.random.randint(0,9999999999,arr_length)
 alist = [int (x) for x in alist]
+
+
+## random order runs
 start = time.clock()
 merge_sort(alist, 0, arr_length)
 end = time.clock()
 execution_time = end - start
-print(alist, "\n\n")
 print("MERGE SORT RANDOM ORDER", execution_time, "SECONDS")
+
+##remove comments to do pre-reverse sorted sort
+alist.reverse()
+start = time.clock()
+merge_sort(alist, 0, arr_length)
+end = time.clock()
+execution_time = end - start
+print("MERGE SORT REVERSE (PRE_SORTED) ORDER", execution_time, "SECONDS")
+
+
+start = time.clock()
+merge_sort(alist,0,arr_length)
+end=time.clock()
+execution_time = end - start
+print("MERGE SORT PRE-SORTED ORDER", execution_time, "SECONDS")
+

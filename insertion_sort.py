@@ -3,7 +3,7 @@ import numpy as np
 import time
 
 ##initalize array to sort
-arr_length = 40000
+arr_length = 80000
 arr = np.random.randint(0,9999999,arr_length)
 
 
@@ -15,7 +15,7 @@ while i < arr_length:
     while j>0 and arr[j-1] > arr[j]:
         arr[j], arr[j-1] = arr[j-1], arr[j]
         j = j - 1
-    i = i + 1
+    i = i + 1   
 end = time.clock()
 execution_time = end - start
 
