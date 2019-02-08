@@ -71,9 +71,16 @@ expected average:   0(n*log(n))
 **actual average run-times for #n elements (in seconds)** 
 
 order    | 1,000,000 | 2,000,000 | 4,000,000 | 8,000,000  
----------|--------|--------|--------|--------  
-random   |   |   |   | 
-pre-sort |   |   |   |   
-reverse  |   |   |   | 
+---------|-----------|-----------|-----------|--------  
+random   |  17.0     |   35.4    |    79.2   | 
+pre-sort |  13.2     |  28.7     |    62.1   |   
+reverse  |  15.2     |   30.2    |   | 
 
+The final sort that was analyzed was the merge sort.  It seems to be the best sort for the cases that we tested for in terms of run-time.  It is important to consider why the expected runtime is n*log(n).  We have a log(n) run-time because we are splitting the problem size in half at each step of the algorithm, and at each step in the merge, we have to compare n,  
+n elements.  There will be a constant multiplier in these cases that will vary depending on the number of steps you had to take to merge all of the data back together.  As stated previously this constant is ignored and we can claim 0(n\*logn) time complexity.  
+
+It is worth noting also that n*logn runtime is worse than long runtime and worse than linear runtime.  Basically, it is
+linear run time multiplied by the log of the constant, which turns out to be relatively small compared to say n^2 time.
+For very large inputs this is nearly linear but slightly worse, which holds true ion our analysis of the run-times. 
+Also regardless of the condition of the array before merge-sort begins it performs approximately the same under all conditions, which is the expected behavior of the merge sort algorithm. 
 
