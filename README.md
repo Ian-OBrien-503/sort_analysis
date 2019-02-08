@@ -63,10 +63,11 @@ it still remains in the 0(n^2) complexity class.
 
 # *merge sort analysis* 
 
-expected best:      0(n*log(n))  
-expected worst:     0(n*log(n))  
-expected average:   0(n*log(n))  
+expected best:      0(n\*log(n))  
+expected worst:     0(n\*log(n))  
+expected average:   0(n\*log(n))  
 
+*experimental time-complexity for pre-sorted order:  ~0(n\*log(n))*  
 
 **actual average run-times for #n elements (in seconds)** 
 
