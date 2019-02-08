@@ -2,7 +2,7 @@ import random
 import numpy as np
 import time
 
-arr_length = 8000000
+arr_length = 16000000
 
 ## SOURCE
 ## https://www.sanfoundry.com/python-program-implement-merge-sort/

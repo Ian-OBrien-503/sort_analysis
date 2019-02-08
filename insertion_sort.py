@@ -15,7 +15,7 @@ while i < arr_length:
     while j>0 and arr[j-1] > arr[j]:
         arr[j], arr[j-1] = arr[j-1], arr[j]
         j = j - 1
-    i = i + 1   
+    i = i + 1
 end = time.clock()
 execution_time = end - start
 
