@@ -41,9 +41,12 @@ order    | 10,000 | 20,000 | 40,000 | 80,000
 ---------|--------|--------|--------|--------  
 random   |   21   | 86     |  349.6 |  1376
 pre-sort |  0.004 | 0.009  |  0.013 |  0.038
-reverse  |  42.3  | 172.3  | 700.6  | 
+reverse  |  42.3  | 172.3  | 700.6  |  2768
 
-**NOTE: only performed one run for each case for input size of 80,000 since runs took so long. Time seemed consistent  with the rest of the data, if had more time would perform more tests**
+**NOTE:  
+only performed one run for each case for input size of 80,000 since runs took so long. Time seemed consistent  with the 
+rest of the data, if had more time would perform more tests
+**
 
 Our results are slightly more interesting for the insertion sort. In the case of a pre-sorted array, we have a very small run-time, that is hard to compare from input size to input size, at least from what was selected. However, we can see that for each double in the size of the input for the insertion sort, we also see an approximate double in the run time. This
 would suggest that the best case is the pre-sorted case for insertion sort. That is because in the case that the array
